@@ -17,3 +17,13 @@ bart.print_score()
 因此，在__init__方法内部，就可以把各种属性绑定到self，
 因为self就指向创建的实例本身。
 '''
+print("-------------")
+class Teacher(object):
+	def __init__(self,name,age):
+		self.name=name
+		self.age=age
+	def print_age(self):
+		print("%s:%s"%(self.name,self.age))
+#调用老师对象
+t=Teacher('Hanjuan',29)
+t.print_age()
