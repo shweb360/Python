@@ -16,3 +16,5 @@ print("更新后的第三个元素为：",list1[2])
 del list1[2]
 print("删除第三个元素：",list1)
 
+names=['Tom','Jack','Tony']
+print(names)
