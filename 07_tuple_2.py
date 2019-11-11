@@ -17,3 +17,8 @@ t2=('a','b','c')
 #元组中的元素值是不允许修改的，但我们可以对元组进行连接组合，如下实例:
 t3=t1+t2
 print(t3)
+
+#将列表转换为元组
+list1= ['Google', 'Taobao', 'Runoob', 'Baidu']
+tuple1=tuple(list1)
+print(tuple1)

@@ -13,3 +13,11 @@ for w in words:
 	
 for i in range(5):
 	print(i)
+
+n=100
+sum=0
+counter=1
+while counter<=n:
+	sum+=counter
+	counter=counter+1
+print("1 到 %d 之和为: %d" % (n,sum))	
