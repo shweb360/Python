@@ -4,9 +4,11 @@ print(tup)
 print(type(tup))
 #空元组
 tup1=()
+
 #访问元组
 tup2 = (1, 2, 3, 4, 5, 6, 7 )
 print(tup2[2:5])
+
 #修改元组
 t1=(6,7,8)
 t2=('a','b','c')
