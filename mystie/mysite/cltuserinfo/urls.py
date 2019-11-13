@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.urls import path,include
-from . import views,testdb,search
+from . import views,testdb,search,search_post
 
 urlpatterns = [
    url(r'^$', views.index),
@@ -16,4 +16,6 @@ urlpatterns = [
    #表单
    path('search_form/',search.search_form),
    path('search/', search.search),
+   path('search_post/', search_post.search_post),
+   
 ]
