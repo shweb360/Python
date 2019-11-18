@@ -19,8 +19,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include,re_path
 from django.conf.urls import url
-
+from cltuserinfo import views as main_views
 urlpatterns = [
+    
+    path('', main_views.index),
     path('admin/', admin.site.urls),
     
     #url(r'^$', include('cltuserinfo.urls')),
