@@ -2,7 +2,7 @@ import urllib
 import urllib.request
  
 data={}
-data['word']='Jecvay Notes'
+data['word']='Jecvay_Notes'
  
 url_values=urllib.parse.urlencode(data)
 url="http://www.baidu.com/s?"
