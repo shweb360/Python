@@ -15,3 +15,4 @@ try:
     element=WebDriverWait(driver,10).until(EC.presence_of_element_located(By.ID,"kw"))
 finally:    
     driver.quit()
+    
