@@ -23,5 +23,8 @@ class PythonOrgSearch(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         assert "No result found " not in driver.page_source
 
+    def tearDown(self):
+        self.driver.close()
+
 if __name__=="__main__":
     unittest.main()        

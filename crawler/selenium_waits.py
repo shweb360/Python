@@ -16,3 +16,21 @@ try:
 finally:    
     driver.quit()
     
+
+
+
+#1、selenium只是模拟浏览器的行为，而浏览器解析页面是需要时间的（执行css，js），一些元素可能需要过一段时间才能加载出来，为了保证能查找到元素，必须等待
+
+#2、等待的方式分两种：
+browser=webdriver.Chrome()
+wait1=WebDriverWait(browser,10)
+browser.get('http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable')
+
+wait=WebDriverWait(browser,10) #显式等待
+wait1=browser.implicitly_wait(10)    #隐式等待
+wait.until(EC.presence_of_element_located((By.CLASS_NAME,'tH0')))
+'''
+显式等待：指定等待某个标签加载完毕
+隐式等待：等待所有标签加载完毕
+
+'''
