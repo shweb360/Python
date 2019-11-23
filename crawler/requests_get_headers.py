@@ -14,8 +14,6 @@ response=requests.get(
     cookies={
         'user_session':'wGMHFJKgDcmRIVvcA14_Wrt_3xaUyJNsBnPbYzEL6L0bHcfc'
     },
-    
-    
 )
 #查看网页编码
 print(response.encoding)
